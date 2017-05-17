@@ -33,7 +33,7 @@ else
 fi
 
 echo `date` "starting rsync on" $1 >> $LOG_DIR/$1 2>&1
-rsync -a $MOUNT_DIR/$1 $DATA_DIR >> $LOG_DIR/$1 2>>1
+rsync -a $MOUNT_DIR/$1 $DATA_DIR >> $LOG_DIR/$1 2>>$1
 
 echo `date` "starting clamav on" $1 >> $LOG_DIR/$1 2>&1
 clamscan -i -r $MOUNT_DIR/$1 >> $LOG_DIR/$1 2>&1
