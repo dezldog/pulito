@@ -1,18 +1,19 @@
 #!/bin/bash
 # pulito - 'clean' in Italian
 # Script to copy s3 buckes and scan them for virus the log output
-# Dependent on 'aws tools', fuse, and s3fs
 # poorly written ceh 15NOV16
 # Usage pulito S3BUCKETNAME
+# Dependent on clamscan, fuse, and s3fs
+# https://github.com/s3fs-fuse/s3fs-fuse.git
 
 
-LOG_DIR='PATH TO LOG DIR'
-MOUNT_DIR='PATH TO s3fs MOUNTED S3 BUCKET'
-DATA_DIR='PATH TO BACKUP DESTINATION'
-CACHE_DIR='PATH TO CACHE DIRECTORY'
+LOG_DIR='[LOG DIRECTORY]'
+MOUNT_DIR='[MOUNT LOCATION]'
+DATA_DIR='[WHERE THE DATA LIVES]'
+CACHE_DIR='[WHERE TO STORE DATA CACHE]'
 
 
-if [ -z $1 ]; then 
+if [ -z $1 ]; then
     echo "Usage: $0 S3BUCKETNAME"
     exit;
 fi
