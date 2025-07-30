@@ -4,6 +4,8 @@
 # Improved version with proper error handling and logging
 # Usage: pulito S3BUCKETNAME
 # Dependencies: clamscan, s3fs-fuse, rsync
+# 29JUL25
+
 
 set -e  # Exit on any error
 set -u  # Exit on undefined variables
