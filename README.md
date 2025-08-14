@@ -21,5 +21,5 @@ A Bash script to back up and scan AWS S3 buckets for viruses using ClamAV.
 ## Usage
 
 ```sh
-[pulito.sh](http://_vscodecontentref_/1) S3BUCKETNAME
+[pulito.sh] S3BUCKETNAME
 ```
